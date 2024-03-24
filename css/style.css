@@ -1,3 +1,41 @@
 body {
   font-family: "Raleway", "Roboto", sans-serif;
 }
+
+/* ================================================== hover*/
+/* .link {
+  color: teal;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: tomato;
+} */
+/* .social-links .link {
+  color: teal;
+}
+
+.social-links .link:hover {
+  color: tomato;
+} */
+/* =============================================== hover+active*/
+/* .social-links .link {
+  color: teal;
+}
+
+.social-links .link:hover {
+  color: orange;
+}
+
+.social-links .link:active {
+  color: red;
+} */
+/* ======================================================= hover+focus */
+/* .social-links .link {
+  color: teal;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: orange;
+} */
