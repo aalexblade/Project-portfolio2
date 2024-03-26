@@ -1,5 +1,23 @@
 body {
   font-family: "Raleway", "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 2%;
+  color: #434455;
+  background-color: #ffffff;
+
+  /* Line Height: 24px
+Letter Spacing: 2% */
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+	font-family: 'Tahoma';
+} */
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 /* ================================================== hover*/
