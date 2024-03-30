@@ -1,9 +1,9 @@
 body {
   font-family: "Raleway", "Roboto", sans-serif;
-  font-weight: normal;
-  line-height: 1.5;
+  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  /* letter-spacing: 2%; */
   color: #434455;
   background-color: #ffffff;
 
@@ -14,12 +14,117 @@ Letter Spacing: 2% */
 /* h1, h2, h3, h4, h5, h6 {
 	font-family: 'Tahoma';
 } */
+a {
+  text-decoration: none;
+}
 
 ul,
 ol {
   list-style-type: none;
 }
 
+/* <!-- header --> */
+
+.header-logo-link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #4d5ae5;
+}
+
+.header-logo-span {
+  color: #2e2f42;
+}
+
+.header-nav-link {
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.header-contact-link {
+  color: #434455;
+}
+
+/* <!-- Order Service --> */
+.section-order-service {
+  background-color: #2e2f42;
+}
+
+.order-service-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 56px;
+  color: #ffffff;
+}
+
+.order-service-btn {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+/* <!-- Our advantages --> */
+.our-advantage-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+/* <!-- Our Team --> */
+.section-our-team {
+  background-color: #f4f4fd;
+}
+
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.our-team-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+/* <!-- Our portfolio --> */
+.our-portfolio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #2e2f42;
+}
+
+.our-portfolio-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+/* <!-- footer --> */
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-logo-link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #4d5ae5;
+}
+
+.footer-logo-span {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+}
 /* ================================================== hover*/
 /* .link {
   color: teal;
@@ -57,3 +162,4 @@ ol {
 .social-links .link:focus {
   color: orange;
 } */
+/* ====================================================== */
