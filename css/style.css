@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", "Roboto", sans-serif;
+  font-family: 'Raleway', 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -25,7 +25,7 @@ ol {
 
 /* <!-- header --> */
 .header-logo-link {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
@@ -51,13 +51,14 @@ ol {
 }
 
 .order-service-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 56px;
   color: #ffffff;
 }
 
 .order-service-btn {
+  font-family: inherit;
   font-weight: 500;
   color: #ffffff;
   background-color: #4d5ae5;
@@ -110,7 +111,7 @@ ol {
 }
 
 .footer-logo-link {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
