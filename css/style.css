@@ -1,31 +1,47 @@
 body {
-  font-family: "Raleway", "Roboto", sans-serif;
+  font-family: 'Raleway', 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* letter-spacing: 2%; */
+
   color: #434455;
   background-color: #ffffff;
-
-  /* Line Height: 24px
-Letter Spacing: 2% */
 }
-
-/* h1, h2, h3, h4, h5, h6 {
-	font-family: 'Tahoma';
-} */
-a {
-  text-decoration: none;
+/* normalize */
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* container */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* <!-- header --> */
 .header-logo-link {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
@@ -51,7 +67,7 @@ ol {
 }
 
 .order-service-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 56px;
   color: #ffffff;
@@ -110,7 +126,7 @@ ol {
 }
 
 .footer-logo-link {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
