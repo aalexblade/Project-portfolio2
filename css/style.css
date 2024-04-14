@@ -243,9 +243,8 @@ a {
 
 .our-portfolio-border {
   background-color: #ffffff;
-  /* border-radius: 0px 1px 1px 1px; */
-  /* border-color: #e7e9fc; */
   box-shadow: 0px 1px 1px 1px #e7e9fc;
+
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
