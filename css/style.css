@@ -136,6 +136,18 @@ a {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+
+  max-width: 1440px;
+  height: 600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-image/people-office\ 1.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .order-service-title {
@@ -143,6 +155,7 @@ a {
   font-weight: 700;
   font-size: 56px;
   color: #ffffff;
+  line-height: 1.1;
 
   /* text-align: center; */
 
