@@ -139,6 +139,8 @@ a {
 
   max-width: 1440px;
   max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: linear-gradient(
       to right,
@@ -146,8 +148,9 @@ a {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/main-image/people-office\ 1.png);
-  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .order-service-title {
