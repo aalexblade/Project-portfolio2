@@ -75,8 +75,8 @@ a {
 
 /* <!-- header --> */
 .header-page {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -124,9 +124,27 @@ a {
 }
 
 .header-nav-link {
+  display: flex;
+  flex-direction: column;
   color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  /* margin-bottom: 24px; */
+}
+
+.current-page {
+  color: #404bbf;
+}
+
+.header-nav-link.current-page::after {
+  /* display: flex; */
+
+  content: '';
+  width: 48px;
+  height: 2px;
+
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .header-contact {
@@ -144,9 +162,9 @@ a {
   margin-right: 40px;
 }
 
-.header-contact-mail::before {
+/* .header-contact-mail::before {
   background-image: ;
-}
+} */
 
 /* <!-- main --> */
 
@@ -210,18 +228,6 @@ a {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-
-/* .our-advantage-icon {
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-
-  width: 264px;
-  height: 112px;
-
-  padding: 24px 100px;
-  margin-bottom: 8px;
-} */
 
 .our-advantage-flex {
   display: flex;
