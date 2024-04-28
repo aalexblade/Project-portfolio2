@@ -280,8 +280,8 @@ a {
 }
 
 .our-team-text {
-  margin-bottom: 32px;
   font-family: 'Roboto';
+  margin-bottom: 8px;
 }
 .our-team-social {
   display: flex;
@@ -293,7 +293,6 @@ a {
 }
 
 .our-team-social-item {
-  /* display: block; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,11 +302,11 @@ a {
   width: 40px;
 
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: #404bbf;
 }
 
-.our-team-social-icon {
-}
+/* .our-team-social-icon {
+} */
 
 /* <!-- Our portfolio --> */
 .our-portfolio-title {
@@ -365,12 +364,33 @@ a {
   padding-left: 16px;
 }
 
+.our-portfolio-overlay {
+  cursor: pointer;
+  width: 360px;
+  height: 300px;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
 /* <!-- footer --> */
 .footer {
   background-color: #2e2f42;
-
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-wrapper {
+  display: flex;
+  /* align-items: center; */
+}
+
+.fotter-logo-wrapper {
+  margin-right: 120px;
 }
 
 .footer-logo-link {
@@ -379,6 +399,10 @@ a {
   font-size: 18px;
   line-height: 1.2;
   color: #4d5ae5;
+
+  display: block;
+
+  margin-bottom: 16px;
 }
 
 .footer-logo-span {
@@ -388,8 +412,48 @@ a {
 .footer-text {
   color: #f4f4fd;
 
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
+
+/* .footer-social-media {
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 208px;
+  height: 80px;
+} */
+
+.footer-social-title {
+  font-weight: 500;
+  color: #ffffff;
+
+  margin-bottom: 16px;
+}
+
+.footer-social-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-social-link:hover {
+  background-color: #31d0aa;
+}
+
 /* ================================================== hover*/
 /* .link {
   color: teal;
