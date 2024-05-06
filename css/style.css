@@ -60,7 +60,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* button */
@@ -124,6 +124,7 @@ a {
 }
 
 .header-nav-link {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -139,13 +140,16 @@ a {
 }
 
 .header-nav-link.current-page::after {
-  /* display: flex; */
+  position: absolute;
+  display: block;
   content: '';
-  width: 48px;
+  width: 100%;
   height: 2px;
 
   border-radius: 2px;
   background-color: #404bbf;
+  bottom: 0;
+  left: 0;
 }
 
 .header-contact {
@@ -423,6 +427,7 @@ a {
   cursor: pointer;
   margin-bottom: 32px;
   padding-left: 16px;
+  color: #434455;
 }
 
 /* <!-- footer --> */
@@ -491,6 +496,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding-top: 8px;
 
   height: 40px;
   width: 40px;
