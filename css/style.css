@@ -144,8 +144,7 @@ a {
   display: block;
   content: '';
   width: 100%;
-  height: 2px;
-
+  height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
   bottom: 0;
@@ -155,7 +154,6 @@ a {
 .header-contact {
   display: flex;
   margin-left: auto;
-  /* margin-left: 332px; */
 }
 
 .header-contact-link {
@@ -190,7 +188,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-image/people-office\ 1.png);
+    url(../images/main-image/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -341,9 +339,6 @@ a {
 }
 
 .our-portfolio-border {
-  /* position: relative;
-  overflow: hidden; */
-
   background-color: #ffffff;
   box-shadow: 0px 1px 1px 1px #e7e9fc;
 
@@ -395,7 +390,6 @@ a {
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
-  /* padding-bottom: 164px; */
 
   color: #ffffff;
   background-color: #4d5ae5;
@@ -404,10 +398,10 @@ a {
 .our-portfolio-border:hover .our-portfolio-overlay {
   transform: translateY(0);
 
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-heading {
@@ -503,7 +497,7 @@ a {
   border-radius: 50%;
   background-color: #4d5ae5;
 
-  transition: background-color 250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover {
