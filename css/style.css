@@ -190,6 +190,7 @@ a {
   font-weight: 500;
   color: #ffffff;
   background-color: #4d5ae5;
+  border: none;
 }
 
 /* <!-- Our advantages --> */
@@ -480,6 +481,10 @@ a {
 
 .footer-lable {
   margin-right: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-form-text {
@@ -499,29 +504,29 @@ a {
 
   background-color: #2e2f42;
   border-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
 
   padding-left: 16px;
 }
 
 .footer-input-text::placeholder {
-  /* font-size: 12px;
-  line-height: 2; */
-  color: #ffffff;
-
+  color: rgba(255, 255, 255, 0.6);
   padding-bottom: 8px;
 }
 
-.form-button {
+.footer-btn {
   font-weight: 500;
   width: 165px;
   height: 40px;
 
   color: #ffffff;
   background-color: #4d5ae5;
+  border: none;
+  cursor: pointer;
   border-radius: 4px;
   padding-right: 64px;
+  padding-left: 24px;
 }
 
 /* .form-button::after {
