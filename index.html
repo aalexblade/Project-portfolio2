@@ -78,7 +78,8 @@
                     <span class="order-modal-input-title">Name</span>
                     <lable class="order-modal-input">
                         <div class="order-icon-position-name">
-                            <input class="order-modal-input-text" type="text" name="userName" autofocus>
+                            <input class="order-modal-input-text" aria-hidden="true" type="text" name="userName"
+                                autofocus>
                             <svg class="order-modal-input-icon-name" width="18" height="24">
                                 <use href="./images/symbol-defs.svg#icon-person-black"></use>
                             </svg>
@@ -110,10 +111,17 @@
                         <textarea class="order-modal-textarea-text" name="comment" placeholder="Text input"></textarea>
                     </lable>
 
-                    <div>
-                        <svg class="" aria-hidden="true" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-check"></use>
+                    <div class="order-modal-accept">
+
+                        <svg class="order-modal-checkbox-icon" aria-hidden="true" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
                         </svg>
+
+                        <svg class="order-modal-accept-icon" aria-hidden="true" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-checkbox-active"></use>
+                        </svg>
+                        <a href="" class="order-modal-agre">I accept the terms and conditions of the <span
+                                class="modal-order-agre-active">Privacy Policy</span></a>
                     </div>
 
                     <button class="order-modal-btn button" type="submit">Send</button>

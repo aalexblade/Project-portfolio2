@@ -236,7 +236,6 @@ a {
 }
 
 .oarder-modal-icon {
-  /* align-items: center; */
   display: block;
   content: '';
   position: absolute;
@@ -329,6 +328,26 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   outline: none;
+}
+
+.order-modal-accept {
+  /* border: 16px;
+  border-color: rgba(46, 47, 66, 0.4);
+  border-radius: 4px; */
+}
+
+.order-modal-agre {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: inherit;
+  color: rgba(142, 143, 153, 1);
+  margin-bottom: 24px;
+}
+
+.modal-order-agre-active {
+  text-decoration: underline;
+  color: #4d5ae5;
 }
 
 .order-container {
