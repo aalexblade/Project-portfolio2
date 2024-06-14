@@ -126,12 +126,15 @@ a {
   margin-right: 76px;
 }
 
+/* menu mobil header*/
+
 .header-mob-menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header-mob-menu-button .mob-menu-icon-close {
@@ -144,6 +147,18 @@ a {
 
 .header-mob-menu-button.is-open .mob-menu-icon {
   display: none;
+}
+
+.header-menu-container {
+  /* font-size: 36px;
+  background-color: #fff; */
+  max-width: 320px;
+  /* height: 640px; */
+
+  padding-left: 16px;
+  padding-right: 24px;
+
+  border: 1px solid blueviolet;
 }
 
 .header-nav-list {

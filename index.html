@@ -26,12 +26,16 @@
         <div class="container header-page-nav">
             <a class="header-logo-link" href="/">WEB<span class="header-logo-span">STUDIO</span></a>
 
-            <button class="header-mob-menu-button is-open" data-menu-buttun type="button">
+            <button class="header-mob-menu-button is-open" type="button" data-menu-button aria-expanded="false">
                 <svg width="24" height="24" aria-label="switch mobail menu">
-                    <use class="mob-menu-icon" href="./images/symbol-defs.svg#icon-checkbox-active"></use>
-                    <use class="mob-menu-icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+                    <use class="mob-menu-icon" href="./images/sprite.svg#icon-open-menu"></use>
+                    <use class="mob-menu-icon-close" href="./images/sprite.svg#icon-close-menu"></use>
                 </svg>
             </button>
+
+            <div class="header-menu-container">
+                Content memu
+            </div>
 
             <nav class="header-nav">
                 <ul class="header-nav-list">
@@ -597,6 +601,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
