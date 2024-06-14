@@ -126,6 +126,26 @@ a {
   margin-right: 76px;
 }
 
+.header-mob-menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-mob-menu-button .mob-menu-icon-close {
+  display: none;
+}
+
+.header-mob-menu-button.is-open .mob-menu-icon-close {
+  display: block;
+}
+
+.header-mob-menu-button.is-open .mob-menu-icon {
+  display: none;
+}
+
 .header-nav-list {
   font-weight: 500;
   color: #2e2f42;
