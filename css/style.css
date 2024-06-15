@@ -108,6 +108,7 @@ a {
 }
 
 .header-page-nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -150,16 +151,31 @@ a {
 }
 
 .header-menu-container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
   /* font-size: 36px;
   background-color: #fff; */
+  background-color: #fff;
   max-width: 320px;
-  /* height: 640px; */
+  height: 640px;
 
   padding-left: 16px;
   padding-right: 24px;
 
   border: 1px solid blueviolet;
+
+  &.is-open {
+    display: block;
+  }
 }
+
+/* .header-menu-container.is-open {
+  display: block;
+} */
 
 .header-nav-list {
   font-weight: 500;
