@@ -26,14 +26,15 @@
         <div class="container header-page-nav">
             <a class="header-logo-link" href="/">WEB<span class="header-logo-span">STUDIO</span></a>
 
-            <button class="header-mob-menu-button is-open" type="button" data-menu-button aria-expanded="false">
+            <button class="header-mob-menu-button " type="button" data-menu-button aria-expanded="false"
+                aria-controls="header-menu-container">
                 <svg width="24" height="24" aria-label="switch mobail menu">
                     <use class="mob-menu-icon" href="./images/sprite.svg#icon-open-menu"></use>
                     <use class="mob-menu-icon-close" href="./images/sprite.svg#icon-close-menu"></use>
                 </svg>
             </button>
 
-            <div class="header-menu-container">
+            <div class="header-menu-container" id="header-menu-container" data-menu>
                 Content memu
             </div>
 
