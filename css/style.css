@@ -7,6 +7,13 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
+/* remove the page scroll when the modal is open */
+
+body.modal-open {
+  overflow: hidden;
+}
+
 /* normalize */
 h2,
 h3,
