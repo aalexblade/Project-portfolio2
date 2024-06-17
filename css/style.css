@@ -7,6 +7,13 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
+/* remove the page scroll when the modal is open */
+
+body.modal-open {
+  overflow: hidden;
+}
+
 /* normalize */
 h2,
 h3,
@@ -102,15 +109,19 @@ a {
 
 /* <!-- header --> */
 .header-page {
+  position: relative;
   /* padding-top: 24px;
   padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-page-nav {
-  position: relative;
   display: flex;
   align-items: center;
+
+  /* @media screen and (max-width: 767px) {
+    height: 24px;
+  } */
 }
 
 .header-logo-link {
@@ -136,6 +147,10 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .header-mob-menu-button .mob-menu-icon-close {
@@ -157,8 +172,6 @@ a {
   top: 100%;
   left: 0;
 
-  /* font-size: 36px;
-  background-color: #fff; */
   background-color: #fff;
   max-width: 320px;
   height: 640px;
@@ -173,15 +186,26 @@ a {
   }
 }
 
-/* .header-menu-container.is-open {
-  display: block;
-} */
-
 .header-nav-list {
   font-weight: 500;
   color: #2e2f42;
 
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+  }
 }
 
 .header-nav-item:not(:last-child) {
@@ -203,20 +227,35 @@ a {
 }
 
 .header-nav-link.current-page::after {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404bbf;
-  bottom: 0;
-  left: 0;
+  @media screen and(min-width:768px) {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .header-contact {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+
+    font-size: 20px;
+    color: #4d5ae5;
+  }
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .header-contact-link {
