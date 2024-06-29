@@ -98,7 +98,7 @@ a {
   border: none;
   cursor: pointer;
 
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,10 +128,11 @@ a {
 .header-page-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     justify-content: space-between;
-  }
+  } */
 }
 
 .header-logo-link {
@@ -145,7 +146,13 @@ a {
 .header-logo-span {
   color: #2e2f42;
 
-  margin-right: 76px;
+  @media screen and (max-width: 1157px) {
+    margin-right: 120px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin-right: 76px;
+  }
 }
 
 /* menu mobil header*/
@@ -181,6 +188,9 @@ a {
 }
 
 .header-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   /* z-index: 999; */
   /* transform: translateX(100%);
   transition: transform 250ms ease-in-out; */
@@ -217,13 +227,14 @@ a {
   font-weight: 500;
   color: #2e2f42;
 
+  display: flex;
+
   @media screen and (max-width: 767px) {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
 
-    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -231,8 +242,13 @@ a {
     margin-bottom: 168px;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-right: 121px;
+  }
+
   @media screen and (min-width: 1158px) {
     display: flex;
+    margin-right: 332px;
   }
 }
 
@@ -275,11 +291,12 @@ a {
 }
 
 .header-contact {
+  display: flex;
+
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 20px;
 
-    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -289,8 +306,18 @@ a {
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    margin-left: auto;
+    font-size: 12px;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-size: 16px;
+    flex-direction: row;
+
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
   }
 }
 
@@ -300,7 +327,9 @@ a {
 }
 
 .header-contact-mail {
-  margin-right: 40px;
+  @media screen and (min-width: 1158px) {
+    margin-right: 40px;
+  }
 }
 
 .header-social {
@@ -564,6 +593,14 @@ a {
   opacity: 0;
 }
 
+.order-modal-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .order-modal-agre {
   display: inline-block;
   font-family: inherit;
@@ -628,26 +665,28 @@ a {
   display: flex;
   flex-direction: column;
 
-  max-width: 408px;
-  height: 584px;
-  /* min-height: 50%; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  padding: 24px;
-
   background-color: #fcfcfc;
   border-radius: 4px;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     max-width: 288px;
     height: 623px;
-    padding: 16px;
+    padding: 24px 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 408px;
+    height: 584px;
+    /* min-height: 50%; */
+    /* margin-left: auto;
+  margin-right: auto; */
+    padding: 24px;
   }
 }
 
@@ -681,7 +720,7 @@ a {
 
 .our-advantage-flex {
   display: flex;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     align-items: start;
     justify-content: start;
     flex-direction: column;
@@ -690,17 +729,22 @@ a {
 }
 
 .our-advantage-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
   color: #2e2f42;
-
   margin-bottom: 8px;
 
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
+
+  @media screen and (max-width: 1157px) {
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
   }
 }
