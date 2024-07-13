@@ -239,8 +239,12 @@
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-flex">
                     <li class="our-team-border">
-                        <img class="our-team-img" src="./images/our-team/Mark-Guerrero.jpg" width="264"
-                            alt="Product Designer">
+                        <picture>
+                            <img class="our-team-img" srcset="
+                            ./images/our-team/Mark-Guerrero-264px@1x.jpg 1x, 
+                                ./images/our-team/Mark-Guerrero-264px@2x.jpg 2x"
+                                src="./images/our-team/Mark-Guerrero-264px@1x.jpg" alt="Product Designer" width="320">
+                        </picture>
                         <h3 class="our-team-heading">Mark Guerrero</h3>
                         <p class="our-team-text">Product Designer</p>
                         <ul class="our-team-social">
@@ -284,7 +288,14 @@
                         </ul>
                     </li>
                     <li class="our-team-border">
-                        <img class="our-team-img" src="./images/our-team/Tom-Ford.jpg" alt="Frontend Developer">
+
+                        <picture>
+                            <img class="our-team-img" srcset="
+                            ./images/our-team/Tom-Ford-264px@1x.jpg 1x,
+                            ./images/our-team/Tom-Ford-264px@2x.jpg 2x" src="./images/our-team/Tom-Ford-264px@1x.jpg"
+                                alt="Frontend Developer" width="320">
+                        </picture>
+
                         <h3 class="our-team-heading">Tom Ford</h3>
                         <p class="our-team-text">Frontend Developer</p>
                         <ul class="our-team-social">
@@ -328,7 +339,13 @@
                         </ul>
                     </li>
                     <li class="our-team-border">
-                        <img class="our-team-img" src="./images/our-team/Camila-Garcia.jpg" alt="Marketing">
+
+                        <picture>
+                            <img class="our-team-img" srcset="/images/our-team/Camila-Garcia-264px@1x.jpg 1x, 
+                                /images/our-team/Camila-Garcia-264px@2x.jpg 2x"
+                                src="/images/our-team/Camila-Garcia-264px@1x.jpg" alt="Marketing" width="320">
+                        </picture>
+
                         <h3 class="our-team-heading">Camila Garcia</h3>
                         <p class="our-team-text">Marketing</p>
                         <ul class="our-team-social">
@@ -372,7 +389,14 @@
                         </ul>
                     </li>
                     <li class="our-team-border">
-                        <img class="our-team-img" src="./images/our-team/Daniel-Wilson.jpg" alt="UI Designer">
+
+                        <picture>
+                            <img class="our-team-img" srcset="
+                            ./images/our-team/Daniel-Wilson-264px@1x.jpg x1,
+                            ./images/our-team/Daniel-Wilson-264px@2x.jpg x2"
+                                src="./images/our-team/Daniel-Wilson-264px@1x.jpg" alt="UI Designer" width="320">
+                        </picture>
+
                         <h3 class="our-team-heading">Daniel Wilson</h3>
                         <p class="our-team-text">UI Designer</p>
                         <ul class="our-team-social">
@@ -428,8 +452,26 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/BankingApp.jpg" width="360"
-                                    height="300" alt="Banking App">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/our-portfolio/Banking-App-288px@x1.jpg 1x,
+                                        ./images/our-portfolio/Banking-App-288px@x2.jpg 2x
+                                            " media="(max-width: 767px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Banking-App-356px@x1.jpg 1x,
+                                        ./images/our-portfolio/Banking-App-356px@x2.jpg 2x
+                                        " media="(max-width: 1157px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Banking-App-360px@x1.jpg 1x,
+                                        ./images/our-portfolio/Banking-App-360px@x2.jpg 2x
+                                        " media="(min-width:1158px)">
+
+                                    <img class=" our-portfolio-img"
+                                        src="./images/our-portfolio/Banking-App-288px@x1.jpg" alt="Banking App">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
@@ -451,8 +493,27 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/CashlessPayment.jpg"
-                                    width="360" height="300" alt="Cashless Payment">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/our-portfolio/Cashless-Payment-288px@x1.jpg 1x,
+                                        ./images/our-portfolio/Cashless-Payment-288px@x2.jpg 2x
+                                         " media="(max-width: 767px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Cashless-Payment-356px@x1.jpg 1x,
+                                        ./images/our-portfolio/Cashless-Payment-356px@x2.jpg 2x
+                                        " media="(max-width: 1157px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Cashless-Payment-360px@x1.jpg 1x,
+                                        ./images/our-portfolio/Cashless-Payment-360px@x2.jpg 2x
+                                        " media="(min-width:1158px)">
+
+                                    <img class=" our-portfolio-img"
+                                        src="./images/our-portfolio/Cashless-Payment-288px@x1.jpg"
+                                        alt="Cashless Payment">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
@@ -474,8 +535,26 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/MeditationApp.jpg"
-                                    width="360" height="300" alt="Meditation App">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/our-portfolio/Meditation-App-288px@x1.jpg 1x,
+                                        ./images/our-portfolio/Meditation-App-288px@x2.jpg 2x
+                                         " media="(max-width: 767px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Taxi-Service-356px@x1.jpg 1x,
+                                        ./images/our-portfolio/Taxi-Service-356px@x2.jpg 2x
+                                        " media="(max-width: 1157px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Taxi-Service-360px@x1.jpg 1x,
+                                        ./images/our-portfolio/Taxi-Service-360px@x2.jpg 2x
+                                        " media="(min-width:1158px)">
+
+                                    <img class="our-portfolio-img"
+                                        src="./images/our-portfolio/Meditation-App-288px@x1.jpg" alt="Meditation App">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
@@ -496,8 +575,26 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/TaxiService.jpg" width="360"
-                                    height="300" alt="Taxi Service">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/our-portfolio/Taxi-Service-288px@x1.jpg 1x,
+                                        ./images/our-portfolio/Taxi-Service-288px@x2.jpg 2x
+                                         " media="(max-width: 767px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Meditation-App-356px@x1.jpg 1x,
+                                        ./images/our-portfolio/Meditation-App-356px@x2.jpg 2x
+                                        " media="(max-width: 1157px)">
+
+                                    <source srcset="
+                                        ./images/our-portfolio/Meditation-App-360px@x1.jpg 1x,
+                                        ./images/our-portfolio/Meditation-App-360px@x2.jpg 2x
+                                        " media="(min-width:1158px)">
+
+                                    <img class="our-portfolio-img"
+                                        src="./images/our-portfolio/Taxi-Service-288px@x1.jpg" alt="Taxi Service">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
@@ -518,8 +615,27 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/ScreenIllustrations.jpg"
-                                    width="360" height="300" alt="Screen Illustrations">
+
+                                <picture>
+                                    <source srcset="
+                                            ./images/our-portfolio/Screen-Illustrations-288px@x1.jpg 1x,
+                                            ./images/our-portfolio/Screen-Illustrations-288px@x2.jpg 2x
+                                             " media="(max-width: 767px)">
+
+                                    <source srcset="
+                                            ./images/our-portfolio/Screen-Illustrations-356px@x1.jpg 1x,
+                                            ./images/our-portfolio/Screen-Illustrations-356px@x2.jpg 2x
+                                            " media="(max-width: 1157px)">
+
+                                    <source srcset="
+                                            ./images/our-portfolio/Screen-Illustrations-360px@x1.jpg 1x,
+                                            ./images/our-portfolio/Screen-Illustrations-360px@x2.jpg 2x
+                                            " media="(min-width:1158px)">
+
+                                    <img class="our-portfolio-img"
+                                        src="./images/our-portfolio/Screen-Illustrations-288px@x1.jpg"
+                                        alt="Screen Illustrations">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
@@ -540,8 +656,25 @@
                     <li class="our-portfolio-border">
                         <a class="our-portfolio-shadow" href="">
                             <div class="our-portfolio-img-overlay">
-                                <img class="our-portfolio-img" src="./images/our-portfolio/OnlineCourses.jpg"
-                                    width="360" height="300" alt="Online Courses">
+
+                                <picture>
+                                    <source srcset="
+                                            ./images/our-portfolio/Online-Courses-288px@x1.jpg 1x,
+                                            ./images/our-portfolio/Online-Courses-288px@x2.jpg 2x
+                                             " media="(max-width: 767px)"">
+
+                                    <source srcset=" ./images/our-portfolio/Online-Courses-356px@x1.jpg 1x,
+                                        ./images/our-portfolio/Online-Courses-356px@x2.jpg 2x " media="
+                                        (min-width:1158px)"">
+
+                                    <source srcset="
+                                            ./images/our-portfolio/Online-Courses-360px@x1.jpg 1x,
+                                            ./images/our-portfolio/Online-Courses-360px@x2.jpg 2x
+                                            " media="(min-width:1158px)"">
+
+                                    <img class=" our-portfolio-img"
+                                        src="./images/our-portfolio/Online-Courses-288px@x1.jpg" alt="Online Courses">
+                                </picture>
 
                                 <p class="our-portfolio-overlay">
                                     14 Stylish and User-Friendly App Design Concepts
