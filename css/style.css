@@ -919,6 +919,9 @@ img {
   @media screen and (max-width: 767px) {
     margin-bottom: 72px;
   }
+  /* @media screen and (max-width: 768px) {
+    margin-bottom: 64px;
+  } */
 }
 
 .our-team-social-item {
@@ -1088,6 +1091,11 @@ img {
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    /* padding-left: 108px; */
+  }
 }
 
 .fotter-logo-wrapper {
@@ -1105,7 +1113,7 @@ img {
   display: block;
   margin-bottom: 16px;
 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 }
@@ -1116,7 +1124,8 @@ img {
 
 .footer-text {
   color: #f4f4fd;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1157px) {
+    margin-right: 24px;
     margin-bottom: 72px;
   }
 
@@ -1124,6 +1133,10 @@ img {
 }
 
 .footer-social-media {
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+  }
+
   @media screen and (min-width: 1158px) {
     margin-right: 80px;
   }
