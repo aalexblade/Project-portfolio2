@@ -246,6 +246,7 @@ img {
     justify-content: flex-start;
     flex-direction: column;
     gap: 40px;
+
     margin-bottom: 168px;
   }
 
@@ -266,9 +267,6 @@ img {
   color: #2e2f42;
 
   @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1158px) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -292,6 +290,7 @@ img {
   background-color: #404bbf;
   bottom: 0;
   left: 0;
+  margin-bottom: -1px;
 }
 
 .header-contact {
@@ -312,8 +311,6 @@ img {
   @media screen and (min-width: 768px) {
     font-size: 12px;
     flex-direction: column;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -331,6 +328,10 @@ img {
 }
 
 .header-contact-mail {
+  @media screen and (max-width: 1157px) {
+    margin-bottom: 16px;
+  }
+
   @media screen and (min-width: 1158px) {
     margin-right: 40px;
   }
@@ -523,20 +524,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .order-icon-position-name,
-.order-icon-position-phone,
-.order-icon-position-email {
-  position: relative;
-}
-
-.order-modal-input-icon-name,
-.order-modal-input-icon-phone,
-.order-modal-input-icon-email {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-} */
-
 .order-icon-position {
   position: relative;
 }
@@ -636,8 +623,12 @@ img {
 .order-modal-accept {
   position: inherit;
   display: flex;
-  align-self: center;
+  align-items: center;
   margin-bottom: 24px;
+
+  /* @media screen and (max-width: 767px) {
+    align-items: center;
+  } */
   /* border: 16px;
   border-color: rgba(46, 47, 66, 0.4);
   border-radius: 4px; */
@@ -670,8 +661,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
-  gap: 8px;
+  /* flex-direction: row; */
+  /* gap: 8px; */
+  flex-wrap: wrap;
 }
 
 .order-modal-agre {
@@ -690,6 +682,10 @@ img {
   font-size: 12px;
   text-decoration: underline;
   color: #4d5ae5;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 8px;
+  }
 }
 
 .order-container-overlay {
@@ -756,9 +752,6 @@ img {
   @media screen and (min-width: 768px) {
     max-width: 408px;
     height: 584px;
-    /* min-height: 50%; */
-    /* margin-left: auto;
-  margin-right: auto; */
     padding: 24px;
   }
 }
@@ -878,6 +871,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 64px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -890,10 +884,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  @media screen and (max-width: 1157px) {
-    margin-bottom: 64px;
-  }
 }
 
 .our-team-img {
@@ -964,6 +954,7 @@ img {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center; */
   }
 }
 
@@ -973,7 +964,7 @@ img {
   margin-bottom: 48px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
     margin-right: 24px;
     margin-bottom: 72px;
   }
@@ -985,17 +976,17 @@ img {
   }
 }
 
-/* .our-portfolio-flex .our-portfolio-border:nth-child(2n) {
-  @media screen and (min-width: 768px) {
+.our-portfolio-flex .our-portfolio-border:nth-child(2n) {
+  @media screen and (min-width: 768px) and (max-width: 1157px) {
     margin-right: 0;
   }
 }
 
 .our-portfolio-border:nth-last-child(-n + 2) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1157px) {
     margin-bottom: 0;
   }
-} */
+}
 
 .our-portfolio-flex .our-portfolio-border:nth-child(3n) {
   @media screen and (min-width: 1158px) {
@@ -1015,10 +1006,10 @@ img {
   overflow: hidden;
 }
 
-.our-portfolio-img {
-  /* display: block; */
-  /* margin-bottom: 32px; */
-}
+/* .our-portfolio-img {
+  display: block;
+  margin-bottom: 32px;
+} */
 
 .our-portfolio-shadow {
   display: block;
@@ -1091,13 +1082,20 @@ img {
 
 .footer-wrapper {
   display: flex;
+  /* justify-content: center; */
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1157px) {
+    /* flex-wrap: wrap; */
+    /* margin-left: 108px; */
+    /* justify-content: center; */
+
+    width: 552px;
+    text-align: start;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
