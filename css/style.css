@@ -263,6 +263,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
+
     padding-top: 24px;
     padding-bottom: 24px;
   }
