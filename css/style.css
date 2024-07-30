@@ -1097,6 +1097,7 @@ img {
 
 .footer-text {
   color: #f4f4fd;
+  width: 264px;
   @media screen and (max-width: 1157px) {
     margin-right: 24px;
     margin-bottom: 72px;
@@ -1104,9 +1105,9 @@ img {
 }
 
 .footer-social-media {
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     margin-right: 24px;
-  }
+  } */
 
   @media screen and (min-width: 1158px) {
     margin-right: 80px;
@@ -1249,6 +1250,6 @@ img {
 
 .footer-icon-send {
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 117px;
 }
